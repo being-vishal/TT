@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bgandtext-color: #ffffff;
+  --border-radius: 20px;
+  --box-color: rgba(0, 0, 0, 0.7);
+  --hover-box-color: rgba(0, 0, 0, 0.9);
+}
+
+[data-theme="dark"] {
+  --bgandtext-color: #000000;
+  --border-radius: 20px;
+  --box-color: rgba(204, 197, 197, 0.904);
+  --hover-box-color: rgba(255, 255, 255, 0.938);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Montserrat;
+  background-color: var(--bgandtext-color);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%2300d7ff' fill-opacity='0.87'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.navbar img{
+    border-radius: 50%;
+    height: 3rem;
+    width:  3rem;
+}
+
+/* NAVBAR */
+.navbar-brand {
+  padding: 0 2rem 0 0;
+  font-size: 2rem;
+}
+
+.navbar {
+  padding: 0 7rem;
+  background-color: rgb(207, 202, 202);
+}
+
+.nav-item {
+  font-family: "Montserrat";
+  font-weight: 500;
+  padding: 1.7rem;
+}
+
+.nav-link:hover {
+  font-weight: 700;
+}
+
+/* WEEK NAME */
+h1 {
+  color: var(--bgandtext-color);
+  padding: 20px;
+  background: var(--box-color);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  width: 320px;
+  margin: 20px auto 30px;
+  user-select: none;
+}
+
+h1:hover {
+  background: var(--hover-box-color);
+}
+
+/* TIMETABLE CONTAINER */
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.item {
+  background: var(--box-color);
+  color: var(--bgandtext-color);
+  border-radius: var(--border-radius);
+  padding: 10px 10px 20px;
+  margin: 20px;
+}
+
+.item:hover {
+  background: var(--hover-box-color);
+}
+
+a {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+a:link,
+a:visited {
+  color: var(--bgandtext-color);
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  text-decoration: underline;
+}
+
+.fa-trash-alt {
+  float: right;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.name {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.name img {
+  height: 20px;
+  width: 20px;
+  vertical-align: sub;
+  margin-right: 5px;
+}
+
+
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(0, 0, 0); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    height: 50px;
+    width: 50px;
+    border-radius: 50%; /* Rounded corners */
+    font-size: 23px; /* Increase font size */
+    text-align: center;
+    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.767), 0 6px 20px 0 rgba(245, 240, 240, 0.836);
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+  
+
+@media (max-width: 1000px) {
+  body {
+    text-align: center;
+    align-items: center;
+  }
+
+  .navbar {
+    padding: 4%;
+    margin: 0;
+  }
+  .navbar-brand {
+    padding: 0 2rem 0 1rem;
+    font-size: 3rem;
+  }
+  /* .navbar-toggler .navbar-toggler-icon {
+      width: 80px !important;
+      height: 60px !important;
+    } */
+
+  .nav-link {
+    text-align: center;
+  }
+
+}
+
+
+
+
+
+/* Dark Mode Toggle */
+
+.theme-switch-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.fa-sun {
+  font-size: 40px;
+  margin-right: 5px;
+}
+.fa-moon {
+  font-size: 40px;
+  margin-right: 5px;
+  color: white;
+}
+
+.theme-switch-wrapper span {
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  caret-color: rgba(0, 0, 0, 0);
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+.slider::before {
+  background: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background: #1da1f2;
+}
+
+input:checked + .slider::before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round::before {
+  border-radius: 50%;
+}
